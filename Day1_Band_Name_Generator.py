@@ -1,4 +1,3 @@
-#Using String Concatenation
 print("Welcome to the Band Name Generator.")
 print("___________________________________")
 city = input("What's the name of the city you grew up in?\n")
