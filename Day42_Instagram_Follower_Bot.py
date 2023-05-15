@@ -8,6 +8,7 @@ SIMILAR_ACCOUNT = "buzzfeedtasty"
 USERNAME = YOUR INSTAGRAM USERNAME
 PASSWORD = YOUR INSTAGRAM PASSWORD
 
+
 class InstaFollower:
 
     def __init__(self, path):
@@ -49,3 +50,9 @@ class InstaFollower:
             except ElementClickInterceptedException:
                 cancel_button = self.driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[2]')
                 cancel_button.click()
+
+
+bot = InstaFollower(CHROME_DRIVER_PATH)
+bot.login()
+bot.find_followers()
+bot.follow()
